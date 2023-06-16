@@ -26,7 +26,7 @@ const MediaItem: React.FC<MediaItemProps> = ({ onClick, data }) => {
       className="flex items-center cursor-pointer gap-x-3 hover:bg-neutral-800/50 w-full p-2 rounded-md"
     >
       <div className="relative rounded-md min-w-[48px] min-h-[48px] overflow-hidden">
-        <Image fill className=" object-cover" src={imageUrl} alt={data.title} />
+        <Image fill className=" object-cover" src={imageUrl || '/images/liked.png'} alt={data.title} />
       </div>
 
       <div className="flex flex-col gap-y-1 overflow-hidden">
